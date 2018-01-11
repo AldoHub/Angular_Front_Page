@@ -1,1 +1,586 @@
 /* You can add global styles to this file, and also import other style files */
+
+body {
+    background:#FFFAED;
+    color: #111;
+    font-family: "Cardo";
+    padding: 0;
+    margin: 0;
+    
+}
+
+body * {
+    transition: all 200ms ease-in-out;
+}
+
+p {
+    font-size: 1.2rem;
+}
+
+h3 {
+    color: #222;
+    font-size: 2rem;
+   
+}
+
+
+
+.container {
+   width: 100%;
+   max-width: 1800px;
+   background: #eee;
+   margin: 0 auto;
+   position: relative;
+   box-shadow: 0px 2px 2px #aaa;
+}
+
+nav {
+    width: 100%;
+    max-width: 1800px;
+    position: fixed;    
+    text-align: center;
+    background: #eee;
+    padding: 0;
+    z-index: 90;
+    margin: 0;
+}
+
+nav ul {
+    padding: 0;
+    margin: 0;
+    width: 45%;
+    display: inline-block;
+}
+nav ul:first-of-type{
+    text-align: left;
+}
+
+nav ul:last-of-type{
+    width: 45%;
+    text-align: right;
+}
+nav ul li {
+    display: inline-block;
+    margin: 0 12px;
+    position: relative;
+}
+
+nav ul li a {
+    display: block;
+    padding: 20px 12px;
+    text-decoration: none;
+    font-size:1.1rem;
+    color: #111;
+}
+
+nav ul li .line {
+    display: block;
+    height: 4px;
+    position: absolute;
+    background: #111;
+    z-index: 91;
+    width: 0%;
+    bottom: 0px;
+}
+
+nav ul li:hover .line {
+  width:100%;
+
+}
+
+header {
+    background: url("https://images.unsplash.com/photo-1463097769237-a14ad08ff22b?auto=format&fit=crop&w=2089&q=80")center;
+    background-size: cover;
+    height: 800px;
+    transition: none;
+}
+
+
+header div {
+    display: block;
+    width: 70%;
+    margin: 0 auto;
+    padding-top: 290px;
+    text-align: center;
+    padding-bottom: 10px;
+
+}
+
+header div h1 {
+    padding: 0;
+    margin: 0;
+    font-size: 5rem;
+}
+
+header div .subtitle {
+    font-size: 1.3rem;
+    padding: 0;
+    margin: 0;
+}
+
+.social-header {
+    padding: 0;
+    margin: 0;
+   
+}
+
+.social-header li {
+    display: inline-block;
+    margin: 0 12px;
+    
+}
+
+.social-header li a {
+    font-size: 2rem;
+    color: #aaa;
+}
+
+.social-header li a:hover {
+ 
+    color: #111;
+}
+
+
+section.services .cards {
+    border:1px solid #ddd;
+    padding: 10px;
+    width: 20%;
+    margin: 0 10px;
+    display: inline-block;
+}
+
+section {
+    padding: 60px 0;
+    text-align: center;
+}
+
+section.intro {
+    width: 70%;
+    margin: 0 auto;
+   
+}
+
+section .cards img {
+    width: 100%;
+}
+.details-card-lf-img, .details-card-rt-img {
+   padding: 20px 0;
+   
+}
+.details-card-lf-img *,.details-card-rt-img *  {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.details-card-lf-img img, .details-card-rt-img img{
+    width: 40%;
+    
+}
+.details-card-lf-img div{
+    width: 40%;
+    margin-left: 20px;
+    text-align: justify;
+
+}
+
+.details-card-rt-img div {
+    width: 40%;
+    margin-right: 20px;
+    text-align: justify;
+}
+
+section.rest {
+    width: 100%;
+    background: url("https://static.pexels.com/photos/566454/pexels-photo-566454.jpeg")top;
+    height: 500px;    
+    background-size: cover;
+
+}
+
+section.rest-two {
+    width: 100%;
+    height: 500px;    
+    background: url("https://images.unsplash.com/photo-1498401706397-f4637050e174?auto=format&fit=crop&w=1489&q=80")center;
+    background-size:cover;
+    transition: none; 
+}
+
+
+section.testimonials .cards {
+    width: 25%;
+    display: inline-table;
+    margin: 10px;
+    padding: 10px;
+    border:1px solid #ddd;
+}
+
+section.testimonials .cards img {
+    width: 40%;
+    border-radius: 100%;
+}
+
+section.testimonials .cards .title {
+    font-size: 3rem;
+    text-transform: capitalize;
+    margin-bottom: -15px;
+    padding: 0;
+}
+
+section.testimonials .cards .subtitle {
+    
+    text-transform: capitalize;
+    
+}
+
+
+
+
+footer {
+    padding: 40px 0;
+    background: #ddd;
+    text-align: center;
+}
+footer div {
+    display: inline-block;
+    width: 45%;
+    padding: 10px;
+    vertical-align: middle;
+}
+
+footer div form input {
+    width: 65%;
+    display: inline-block;
+    margin: 0;
+    padding: 10px 0;
+    border: none;
+
+}
+footer div form input[type="text"]{
+    text-indent: 10px;
+}
+
+footer div form input[type="submit"]{
+    width: 25%;
+    border:1px solid #222;
+}
+
+footer div form input[type="submit"]:hover {
+    background: #222;
+    color: #fff;
+    cursor: pointer;
+}
+
+footer div ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 0 20px;
+}
+
+footer div ul.links li {
+    display: inline-table;
+    text-align: left;
+}
+
+footer div ul.social-footer li a {
+    color: #aaa;
+    font-size: 2rem;
+}
+
+footer div ul.links li a {
+    color: #222;
+    display: block;
+    text-decoration: none;
+}
+
+
+#nav-icon{
+    width: 30px;
+    height: 45px;
+    top: 20px;
+    position: absolute;
+    right: 10px;
+    z-index: 99;
+    display: none;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: .5s ease-in-out;
+    -moz-transition: .5s ease-in-out;
+    -o-transition: .5s ease-in-out;
+    transition: .5s ease-in-out;
+    cursor: pointer;
+  }
+  
+  
+  #nav-icon span{
+    display: block;
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    background: #222;
+    border-radius: 9px;
+    opacity: 1;
+    left: 0;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: .25s ease-in-out;
+    -moz-transition: .25s ease-in-out;
+    -o-transition: .25s ease-in-out;
+    transition: .25s ease-in-out;
+  }
+  
+  #nav-icon span:nth-child(1) {
+    top: 0px;
+  }
+  
+  #nav-icon span:nth-child(2) {
+    top: 9px;
+  }
+  
+  #nav-icon span:nth-child(3) {
+    top: 18px;
+  }
+  
+  #nav-icon.open span:nth-child(1) {
+    top: 9px;
+    -webkit-transform: rotate(135deg);
+    -moz-transform: rotate(135deg);
+    -o-transform: rotate(135deg);
+    transform: rotate(135deg);
+  }
+  
+  #nav-icon.open span:nth-child(2) {
+    opacity: 0;
+    left: -60px;
+  }
+  
+  #nav-icon.open span:nth-child(3) {
+    top: 9px;
+    -webkit-transform: rotate(-135deg);
+    -moz-transform: rotate(-135deg);
+    -o-transform: rotate(-135deg);
+    transform: rotate(-135deg);
+  }
+  
+
+@media (min-width:500px) and (max-width:1060px) {
+    #nav-icon {
+        display: block;
+    }
+    nav ul, nav ul:last-of-type {
+       display: block;
+       text-align: center;
+       width:100%;
+    }
+
+    nav ul:last-of-type {
+        height: 0;
+        overflow: hidden;
+    }
+
+    nav ul:last-of-type li a:hover {
+        background: #222;
+        color: #fff;
+    }
+   
+
+    nav ul li, nav ul:last-of-type li, nav ul:last-of-type.show li {
+        display: block;
+        width: 100%;
+        margin: 0;
+        border-bottom: 1px solid #ddd;   
+    }
+
+
+    nav ul:last-of-type.show{
+        height: auto;
+        
+    }
+      
+    nav ul:last-of-type li .line{
+        display: none;
+    }
+
+}
+
+@media (min-width:500px) and (max-width:1155px) {
+    
+    section.services .cards {
+        width: 40%;
+        margin: 0 0 10px 0;
+        
+    }
+   
+    
+    .details-card-lf-img, .details-card-rt-img {
+        padding: 20px 0;
+        
+     }
+     .details-card-lf-img *,.details-card-rt-img *  {
+         display: block;
+       
+     }
+     
+     .details-card-lf-img img, .details-card-rt-img img{
+         width: 100%;
+         
+     }
+     .details-card-lf-img div{
+         width: 93%;
+         margin: 0px auto;
+       
+     
+     }
+     
+     .details-card-rt-img div {
+        width: 93%;
+        margin: 0px auto;
+       
+     }
+
+
+     section.testimonials .cards {
+        width: 40%;
+         }
+
+     footer {
+        
+         padding-bottom: 0;
+     }
+     footer div {
+         display: block;
+        margin: 0 auto;
+         width: 93%;
+         border-bottom:1px solid #aaa;
+     }
+
+     footer div form {
+         margin: 20px 0;
+     }
+
+     footer div ul.links li {
+    display: block;
+        margin: 10px 0;
+        text-align: center;
+     }
+
+     footer div ul.social-footer {
+        padding: 0;
+             
+    } 
+
+}
+
+
+@media (min-width:0px) and (max-width:499px) {
+    #nav-icon {
+        display: block;
+    }
+    nav ul, nav ul:last-of-type {
+       display: block;
+       text-align: center;
+       width:100%;
+    }
+
+    nav ul:last-of-type {
+        height: 0;
+        overflow: hidden;
+    }
+
+    nav ul:last-of-type li a:hover {
+        background: #222;
+        color: #fff;
+    }
+
+    nav ul li, nav ul:last-of-type li, nav ul:last-of-type.show li {
+        display: block;
+        width: 100%;
+        margin: 0;
+        border-bottom: 1px solid #ddd;   
+    }
+
+
+    nav ul:last-of-type.show{
+        height: auto;
+        
+    }
+      
+    nav ul:last-of-type li .line{
+        display: none;
+    }
+
+    section.services .cards {
+        display: block;
+        width: 93%;
+        margin: 0 0 10px 0;
+        
+    }
+
+    .details-card-lf-img, .details-card-rt-img {
+        padding: 20px 0;
+        
+     }
+     .details-card-lf-img *,.details-card-rt-img *  {
+         display: block;
+       
+     }
+     
+     .details-card-lf-img img, .details-card-rt-img img{
+         width: 100%;
+         
+     }
+     .details-card-lf-img div{
+         width: 93%;
+         margin: 0px auto;
+       
+     
+     }
+     
+     .details-card-rt-img div {
+        width: 93%;
+        margin: 0px auto;
+       
+     }
+     
+     section.testimonials .cards {
+        width: 90%;
+        margin: 10px 0;     
+    }
+
+     footer {
+        padding-bottom: 0;
+     }
+     footer div {
+         display: block;
+         width: 93%;
+         margin: 0 auto;
+         border-bottom:1px solid #aaa;
+     }
+
+    
+
+     footer div form {
+        margin: 20px 0;
+        padding: 0;
+     }
+
+     footer div ul.links {
+         padding: 0;
+         margin: 0;
+     }
+
+     footer div ul.links li {
+        display: block;
+        margin: 10px 0;
+        text-align: center;
+     }
+
+     footer div ul.social-footer {
+         padding: 0;
+         margin: 0;
+     } 
+
+}
